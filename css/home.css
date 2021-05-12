@@ -52,6 +52,28 @@
 }
 
 /* MAIN */
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+main p {
+  font-size: 17px;
+  line-height: 1.7em;
+  color: var(--color-grey);
+}
+main p a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
 
 /* FOOTER */
 footer.container {
