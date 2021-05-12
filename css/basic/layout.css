@@ -18,6 +18,17 @@
   background-color: yellow;
 }
 
+.container .left-column {
+  width: 50%;
+  float: left;
+  background-color: red;
+}
+.container .right-column {
+  width: 45%;
+  float: right;
+  background-color: red;
+}
+
 @media (max-width: 1100px) {
   .container > .row-big {
     width: 800px;
@@ -29,6 +40,14 @@
   .container > .row-big {
     width: 600px;
     margin-left: calc(50% - 300px);
+  }
+
+  .container .left-column {
+    width: 100%;
+  }
+  .container .right-column {
+    width: 100%;
+    margin-top: 60px;
   }
 }
 
