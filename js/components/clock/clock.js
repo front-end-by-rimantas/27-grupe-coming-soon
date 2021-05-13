@@ -25,10 +25,10 @@ function renderClock(selector, targetDate) {
 
     const allValueDOM = DOM.querySelectorAll('.value');
 
+    setInterval(function () {
+        updateClock(allValueDOM, calcDeadline(targetDate));
+    }, 1000);
 
-    // setInterval();
-    // updateClock(allValueDOM, calcDeadline(targetDate));
-    updateClock(allValueDOM, [1, 2, 3, 25]);
 }
 
 export { renderClock }
