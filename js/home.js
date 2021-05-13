@@ -1,3 +1,3 @@
 import { renderClock } from './components/clock/clock.js';
 
-renderClock()
+renderClock('#hero_clock');
