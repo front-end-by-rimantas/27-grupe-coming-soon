@@ -23,7 +23,12 @@ function renderClock(selector, targetDate) {
     // result return
     DOM.innerHTML = HTML;
 
-    setInterval();          // daugkartine
+    const allValueDOM = DOM.querySelectorAll('.value');
+
+
+    // setInterval();
+    // updateClock(allValueDOM, calcDeadline(targetDate));
+    updateClock(allValueDOM, [1, 2, 3, 25]);
 }
 
 export { renderClock }
