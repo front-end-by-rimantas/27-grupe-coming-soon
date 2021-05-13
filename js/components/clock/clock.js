@@ -7,6 +7,7 @@ function renderClock(selector, targetDate) {
 
     // logic
     const DOM = document.querySelector(selector);
+    const fps = 30;
 
     const time = calcDeadline(targetDate);
     const titles = ['days', 'hours', 'minutes', 'seconds'];
@@ -27,7 +28,7 @@ function renderClock(selector, targetDate) {
 
     setInterval(function () {
         updateClock(allValueDOM, calcDeadline(targetDate));
-    }, 1000);
+    }, 1000 / fps);
 
 }
 
