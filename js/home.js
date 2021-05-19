@@ -7,3 +7,15 @@ import { socialsData } from './data/socialsData.js';
 renderClock('#hero_clock', '04-19 10:00:00');
 socials('#socials_block', socialsData);
 progressBar('.left-column > p', progressBarData);
+
+// - kas?
+// - koks ivykio tipas?
+// - ka daryti?
+
+const logoDOM = document.querySelector('.logo');
+
+function handleLogoClick() {
+    console.log('Buvo paspaustas logotipas!');
+}
+
+logoDOM.addEventListener('click', handleLogoClick);
