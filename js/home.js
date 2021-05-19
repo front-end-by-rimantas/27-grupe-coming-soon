@@ -13,9 +13,15 @@ progressBar('.left-column > p', progressBarData);
 // - ka daryti?
 
 const logoDOM = document.querySelector('.logo');
-
 function handleLogoClick() {
     console.log('Buvo paspaustas logotipas!');
 }
-
 logoDOM.addEventListener('click', handleLogoClick);
+
+
+const btnDOM = document.querySelector('.btn');
+let count = 0;
+btnDOM.addEventListener('click', () => {
+    count++;
+    btnDOM.innerText = `Click me (${count})`;
+});
